@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Layout from '../components/layout'
 import { useState } from 'react';
 
+import styles from '../styles/Contact.module.css'
+
 const ContactForm = () => {
     const [formData, setFormData] = useState({
       name: '',
@@ -25,8 +27,8 @@ const ContactForm = () => {
   
     return (
         <container>
-            <div className = "flex place-content-center m-5">
-                <div className="flex bg-sky-500 place-content-start px-8">
+            <div className = {styles.container}>
+                <div className={styles.form}>                    
                 <form onSubmit={handleSubmit}>
                 <div className= "my-2">
                     <label>
@@ -60,7 +62,7 @@ const ContactForm = () => {
                     />
                     </label>
                 </div>
-                    <button type="submit">Submit</button>
+                    <button className={styles.submit} type="submit">Submit</button>
                 </form>
                 </div>
             </div>

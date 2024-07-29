@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    height:
+
+}
+
+.form {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    background: skyblue;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+
+}
+

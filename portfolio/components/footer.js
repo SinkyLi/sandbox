@@ -1,8 +1,10 @@
+import styles from '../styles/Footer.module.css'
+
 const Footer = () => {
   return (
-    <div className = "flex-1 bg-blue-500">
-<h1 className= "text-white text-xl">You musn't be afraid to dream a little bigger, darlin'</h1>
-</div>
+      <div className = {styles.footer}>
+      <h1 className= {styles.quote}>You musn't be afraid to dream a little bigger, darlin'</h1>
+      </div>
   )
 };
 

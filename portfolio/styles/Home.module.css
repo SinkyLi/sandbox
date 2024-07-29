@@ -84,6 +84,13 @@
   .logo {
     height: 1em;
   }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+  
+}
   
   @media (max-width: 600px) {
     .grid {
@@ -91,4 +98,6 @@
       flex-direction: column;
     }
   }
-  
+
+
+

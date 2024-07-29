@@ -1,26 +1,32 @@
+import { useState } from 'react';
+import styles from '../styles/Navbar.module.css'
 import Link from 'next/link'
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+      };    
+
     return (
-        <nav className="flex-1 bg-blue-500">
-               <div className="container mx-auto flex justify-between items-center">
-                        <div className="text-white text-xl">
-                        <Link href="/">Home</Link>
-                        </div>
-                        <div className="text-white text-xl">
-                        <Link href="/about">About</Link>
-                        </div>
-                        <div className="text-white text-xl">
-                        <Link href="/portfolio">Portfolio</Link>
-                        </div>
-                        <div className="text-white text-xl">
-                        <Link href="/contact">Contact Me</Link>
-                        </div>
-                </div>
-        </nav>        
-  
-    )
-  };
+    <nav className={styles.navbar}>        
+        <button className={styles.menuToggle} onClick={toggleMenu}>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+        </button>
+        <ul className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>
+        <li><a href="/">Home</a></li>
+        <li><a href='/about'>About</a></li>
+        <li><a href='/portfolio'>Portfolio</a></li>
+        <li><a href='/contact'>Contact</a></li>
+        </ul>
+        <div className={styles.logo}>SL</div>
+    </nav>
+    );
+};
+
 
   
   export default Navbar;
