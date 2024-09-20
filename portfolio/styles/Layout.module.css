@@ -1,0 +1,15 @@
+.wrap{
+    display: contents;
+    min-height: 100vh; 
+}
+
+
+.body {
+    justify-content: center;
+    padding: 5px;    
+    background-color: skyblue;
+    width: 100%;
+    height: auto;
+
+}
+

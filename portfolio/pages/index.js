@@ -4,9 +4,11 @@ import Layout from '../components/layout'
 
 
 export default function Home(){
-    return (        
-        <h1>Welcome to my page</h1>
-        
-  
+    return (   
+        <container>
+        <h1>Back to where it started...</h1>
+        <p>An Idea</p>
+
+        </container>     
     )
 }
