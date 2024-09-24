@@ -3,13 +3,21 @@
     min-height: 100vh; 
 }
 
+.nav{
+    width: 100%;
+}
 
-.body {
+.body{
     justify-content: center;
     padding: 5px;    
     background-color: skyblue;
     width: 100%;
     height: auto;
+}
 
+.foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 

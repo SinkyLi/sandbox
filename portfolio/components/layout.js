@@ -8,9 +8,9 @@ export default function Layout({ children }) {
   return (
     <container className={styles.wrap}>
     
-      <Navbar/>
+      <Navbar className={styles.nav}/>
       <main className={styles.body}>{children}</main>
-      <Footer/>
+      <Footer className={styles.foot}/>
 
     </container>
   )
